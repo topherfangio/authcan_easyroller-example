@@ -9,6 +9,7 @@ also have the appropriate dependencies installed, or use bundler to install them
 Clone the latest version of the repostiory, and then run the following:
 
   git clone http://github.com/topherfangio/authcan_easyroller-example.git
+  cd authcan_easyroller-example
   bundle install
   rails server
 
