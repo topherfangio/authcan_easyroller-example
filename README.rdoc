@@ -1,0 +1,18 @@
+== authcan_easyroller-example
+
+This is an example application that shows the basic usage of authcan_easyroller[http://github.com/topherfangio/authcan_easyroller/].
+This example only works with Rails 3.x, so please make sure you have that installed before attempting to run this example. You should
+also have the appropriate dependencies installed, or use bundler to install them.
+
+== Usage
+
+Clone the latest version of the repostiory, and then run the following:
+
+  git clone http://github.com/topherfangio/authcan_easyroller-example.git
+  bundle install
+  rails server
+
+== Issues
+
+If you run into any problems, please check to see if there are any pending issues[http://github.com/topherfangio/authcan_easyroller-example/issues]
+that are similar to your problem. Otherwise, please create a new issue so that I can track them and keep people up-to-date.
