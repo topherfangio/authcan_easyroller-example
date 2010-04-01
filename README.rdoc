@@ -11,7 +11,10 @@ Clone the latest version of the repostiory, and then run the following:
   git clone http://github.com/topherfangio/authcan_easyroller-example.git
   cd authcan_easyroller-example
   bundle install
-  rails server
+  rake db:migrate
+  rails server -p 3010
+
+Then visit http://localhost:3010 and create a user.
 
 == Issues
 
