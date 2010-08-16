@@ -1,41 +1,25 @@
 class Ability
-  include CanCan::Ability
+  include AuthcanEasyroller::Ability
 
+# When you're ready to add your own abilities or override the defaults
+# provided, simply uncomment the following lines and add your can and
+# cannot methods below ae_ability_defaults(current_user)
+#
+=begin
   def initialize(current_user)
-    can :read, :all
-    can :manage, UserSession
+    ae_ability_defaults(current_user)
 
+    # Below is an example customization that allows everyone
+    # (including non-authenticated users) to manage all users
+    can :manage, :users
+
+    # To ensure they are applying the changes only to an
+    # authenticated user, simply wrap the calls with an if
+    # statement as below
     if current_user
-      # Abilities for someone with an account (does not necessarily have a "user" role)
-      can [:update, :destroy], User do |user|
-        user == current_user
-      end
-
-
-      # User role abilities
-      if current_user.is_user?
-      end
-
-
-      # Moderator role abilities
-      if current_user.is_moderator?
-      end
-
-
-      # Admin role abilities
-      if current_user.is_admin?
-        can :manage, :all
-      end
-
-
-      # Developer role abilities
-      if current_user.is_developer?
-        can :manage, :all
-      end
-    else
-      can :create, User
+      can :manage, :all
     end
-
   end
+=end
 
 end
