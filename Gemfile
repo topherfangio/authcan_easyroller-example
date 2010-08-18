@@ -17,8 +17,7 @@ gem "sqlite3-ruby", :require => "sqlite3"
 # gem "sqlite3-ruby", :require => "sqlite3"
 # gem "aws-s3", :require => "aws/s3"
 
-#gem "authcan_easyroller", ">= 0.1.3"
-gem "authcan_easyroller", ">= 0.1.3", :path => "/Volumes/topherfangio/Documents/Projects/Development/authcan_easyroller"
+gem "authcan_easyroller", ">= 0.1.3"
 
 ## Bundle gems used only in certain environments:
 # gem "rspec", :group => :test
